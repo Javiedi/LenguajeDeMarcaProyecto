@@ -1,0 +1,68 @@
+h1{
+
+    text-align: center;
+}
+
+.parrafo1{
+
+    color: #9d9faa;
+    
+
+}
+
+.explicacion{
+
+   text-align: center; 
+   border: 2px solid #f3f3f3;
+   background-color: #f3f3f3;
+   margin-left: 30%;
+   margin-right: 30%;
+    padding: 2%;
+}
+
+html{
+
+    background-color: #dee1e4;
+
+}
+
+body{
+
+      border: 1px solid #86aee9;
+    box-shadow: 0 10px 30px #649aeb;
+    
+    border-radius: 10px;
+    padding-top: 2%;
+}
+
+.ejemplo-cajas{
+
+    text-align: center;
+
+}
+
+.caja-content{
+
+    border:7px solid #e97600;
+    background-color: #f3d5aa;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 8px;
+}
+
+.caja-border{
+
+     border:7px solid #358739;
+    background-color: #bfdbc0;
+    margin-left: 42%;
+    margin-right: 42%;
+    margin-top: 2%;
+    padding: 8px;
+
+}
+
+.nota-margen{
+
+    color: #9d9faa;
+
+}
