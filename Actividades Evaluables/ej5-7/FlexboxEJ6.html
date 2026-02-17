@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Flexible con Flexbox</title>
+    <link rel="stylesheet" href="FlexboxEj6.css">
+</head>
+
+<body>
+    <header>
+        <h1>Diseño Flexible con Flexbox</h1>
+        <p>Aprende a alinear elementos fácilmente.</p>
+    </header>
+
+    <section class="section-justify">
+        <h2>1. Justify Content (Eje Principal)</h2>
+        <p>Cambia la clase del contenedor a <code>fila-centro</code> o <code>fila-between</code> en el HTML para ver
+            diferencias.</p>
+        <div class="container justify-container">
+            <div class="box red">1</div>
+            <div class="box red">2</div>
+            <div class="box red">3</div>
+        </div>
+    </section>
+
+    <section class="section-align">
+        <h2>2. Align Items (Eje Cruzado/Vertical)</h2>
+        <p>Alineación vertical dentro del contenedor.</p>
+        <div class="container align-container">
+            <div class="box red short">Corto</div>
+            <div class="box red tall">Alto</div>
+            <div class="box red medium">Medio</div>
+        </div>
+    </section>
+
+    <section class="section-wrap">
+        <h2>3. Galería Responsiva (Wrap)</h2>
+        <p>Los elementos bajan a la siguiente línea si no caben.</p>
+        <div class="container wrap-container">
+            <div class="box blue photo">Foto 1</div>
+            <div class="box blue photo">Foto 2</div>
+            <div class="box blue photo">Foto 3</div>
+            <div class="box blue photo">Foto 4</div>
+            <div class="box blue photo">Foto 5</div>
+            <div class="box blue photo">Foto 6</div>
+            <div class="box blue photo">Foto 7</div>
+            <div class="box blue photo">Foto 8</div>
+        </div>
+    </section>
+</body>
+
+</html>

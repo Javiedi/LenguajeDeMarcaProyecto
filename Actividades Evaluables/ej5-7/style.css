@@ -1,0 +1,113 @@
+/* Base & Layout */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background: #e2e8f0;
+    /* Light gray background */
+}
+
+/* Page Border Effect (Blue Glow/Inset) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 50px rgba(59, 130, 246, 0.5);
+    /* Blue glow */
+    pointer-events: none;
+    z-index: 1000;
+    border: 5px solid #3b82f6;
+    /* Blue border */
+}
+
+h1,
+h2,
+p {
+    margin: 0 0 10px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 0.8rem;
+    color: #4b5563;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Gallery Grid */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column */
+    background-color: #3b82f6;
+    /* Blue background */
+    padding: 0;
+    /* No padding on the container itself judging by image */
+    border-radius: 4px;
+    /* Slight rounding */
+    gap: 0;
+    /* No visible gap between rows in the blue block, or items have margin */
+}
+
+.item {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* Approximate height per item */
+    width: 100%;
+}
+
+/* Page Layout Grid (Areas) - Not visual in image but required by HTML */
+.layout-container {
+    /* Keeping this simpler or hidden if user only wants image match, 
+       but user provided HTML for it so I will style it minimally so it doesn't break. */
+    display: none;
+    /* Hiding section 2 as it is NOT in the reference image provided */
+}
+
+/* If user wanted section 2 (Areas) visible, here it is: */
+/*
+.page-layout {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "hero hero hero"
+        "content content sidebar"
+        "footer footer footer";
+    gap: 10px;
+}
+.nav { grid-area: nav; background: #cbd5e1; padding: 10px; }
+.hero { grid-area: hero; background: #94a3b8; padding: 20px; }
+.content { grid-area: content; background: #f1f5f9; padding: 20px; }
+.sidebar { grid-area: sidebar; background: #e2e8f0; padding: 20px; }
+.footer { grid-area: footer; background: #64748b; color: white; padding: 10px; }
+*/
